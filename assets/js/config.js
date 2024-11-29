@@ -1,5 +1,4 @@
-let jogador,
-  vencedor = null;
+let jogador,vencedor = null;
 let jogadorSelecionado = document.getElementById("jogador_selecionado");
 let vencedorSelecionado = document.getElementById("vencedor_selecionado");
 let quadrados = document.getElementsByClassName("quadrado");
@@ -18,7 +17,6 @@ function escolherQuadrado(i) {
   let quadrado = document.getElementById(i);
 
   if (vencedor) {
-    return; // Se já houver um vencedor, não faz nada
   }
 
   if (quadrado.innerHTML !== "-") {
